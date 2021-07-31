@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* 
+{
+    box-sizing: border-box;
+}
+  
+body 
+{
+    padding: 0;
+    margin: 0;
+}
+
+.head
+{
+    padding: 10px;
+    min-height: 90vh;
+}
+
+.profile
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.profilepic
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 38px;
+}
+
+.name
+{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #4e5150;
+    margin: 16px 0 10px;
+}
+
+.place
+{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #a9a9a9;
+}
+
+.stats
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.item
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 15px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 16px;
+    background-color: #e5e5e5;
+    min-width: 94px;
+    min-height: 66px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #4e5150;
+}
+
+.image-grid
+{
+    display: grid;
+    grid-template-areas:
+      'img1 img2 img2'
+      'img3 img3 img4'
+      'img5 img6 img4';
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 25vw);
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+img 
+{
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img1 
+{
+    grid-area: img1;
+}
+  
+.img2 
+{
+    grid-area: img2;
+}
+  
+.img3 
+{
+    grid-area: img3;
+}
+  
+.img4 
+{
+    grid-area: img4;
+}
+  
+.img5 
+{
+    grid-area: img5;
+}
+  
+.img6 
+{
+    grid-area: img6;
+}
+  
+footer
+ {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #B9BDCF;
+    text-align: center;
+}
+
+a
+{
+    font-weight: 1000;
+    color: #a9a9a9;
+}
+
+@media screen and (min-width: 576px) 
+{
+    .head {
+      padding: 10px 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) 
+{
+    .head {
+      padding: 20px;
+      max-width: 1000px;
+    }
+  
+    .profile {
+      margin: 30px 0;
+    }
+    .profile .profilepic {
+      width: 180px;
+      height: 180px;
+    }
+    .profile .name {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    .profile .place {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    .profile .item {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .image-grid {
+      gap: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) 
+{
+    .head {
+      padding: 25px 40px;
+    }
+  
+    .image-grid {
+      grid-template-rows: repeat(3, 20vw);
+    }
+}
+  
+@media screen and (min-width: 1200px) 
+{
+    .head {
+      padding: 40px;
+    }
+}
